@@ -1,0 +1,11 @@
+.article h3 {
+	font-size: var(--silentclient-fontSizes-2xl);
+}
+
+.article h6 {
+	font-size: var(--silentclient-fontSizes-lg);
+}
+
+.article ul {
+	margin-left: 20px;
+}
