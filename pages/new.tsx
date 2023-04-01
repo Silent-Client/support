@@ -132,6 +132,7 @@ function New() {
 					<FormControl>
 						<FormLabel>Description</FormLabel>
 						<Textarea
+							minHeight={"350px"}
 							isDisabled={isLoading}
 							value={body}
 							onChange={e => setBody(e.currentTarget.value)}
