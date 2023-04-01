@@ -75,6 +75,9 @@ function New() {
 				isClosable: true,
 				position: "bottom",
 			});
+			setEmail("");
+			setBody("");
+			setTitle("");
 		} catch (err: any) {
 			if (err?.response && err.response?.data && err.response.data?.errors) {
 				for (const error of err.response.data.errors) {
