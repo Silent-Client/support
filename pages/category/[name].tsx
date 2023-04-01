@@ -14,8 +14,9 @@ function Category({ category }: { category: Category }) {
 			<Container minW="full">
 				<Heading size="lg">{category.name}</Heading>
 				<Stack direction={"column"} spacing={5} mt={5}>
-					{category.articles.map(article => (
+					{category.articles.map((article, key) => (
 						<Link
+							key={key}
 							_hover={{ textDecoration: "none", opacity: "0.8" }}
 							as={NextLink}
 							href={`/article/${article.link}`}

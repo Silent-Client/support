@@ -16,8 +16,8 @@ export default function Home({ categories }: { categories: CategoryType[] }) {
 					<Heading>Silent Client Support</Heading>
 				</Center>
 				<SimpleGrid mt={5} columns={[1, 2, 3]} spacing={5}>
-					{categories.map(category => (
-						<Category category={category} />
+					{categories.map((category, key) => (
+						<Category key={key} category={category} />
 					))}
 				</SimpleGrid>
 			</Container>
