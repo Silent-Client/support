@@ -27,7 +27,7 @@ function Article({
 	return (
 		<>
 			<Head>
-				<title>{article.name} – Silent Client Support</title>
+				<title>{`${article.name} – Silent Client Support`}</title>
 			</Head>
 			<Container minW="full">
 				<Breadcrumb>

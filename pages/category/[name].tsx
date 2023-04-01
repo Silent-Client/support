@@ -17,7 +17,7 @@ function Category({ category }: { category: Category }) {
 	return (
 		<>
 			<Head>
-				<title>{category.name} – Silent Client Support</title>
+				<title>{`${category.name} – Silent Client Support`}</title>
 			</Head>
 			<Container minW="full">
 				<Breadcrumb>
