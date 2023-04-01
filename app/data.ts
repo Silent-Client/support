@@ -1,3 +1,5 @@
+import change_password from "./articles/account/change_password";
+import register from "./articles/account/register";
 import custom_mods from "./articles/general/custom_mods";
 import faq from "./articles/general/faq";
 import partner_program from "./articles/general/partner_program";
@@ -19,7 +21,7 @@ export function getData() {
 			icon: "/assets/icons/categories/account.svg",
 			description: "Registering and Managing the Silent Client Account.",
 			link: "account",
-			articles: [],
+			articles: [register, change_password],
 		},
 		{
 			name: "Support Center",
