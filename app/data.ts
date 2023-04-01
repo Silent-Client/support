@@ -6,6 +6,7 @@ import partner_program from "./articles/general/partner_program";
 import tester_application from "./articles/general/tester_application";
 import adding_ram from "./articles/support/adding_ram";
 import bug_report from "./articles/support/bug_report";
+import game_no_sound from "./articles/support/game_no_sound";
 import Category from "./types/Category";
 
 export function getData() {
@@ -30,7 +31,7 @@ export function getData() {
 			description:
 				"Payment Support, Technical Support, and Vanilla Minecraft Problems.",
 			link: "support",
-			articles: [adding_ram, bug_report],
+			articles: [adding_ram, game_no_sound, bug_report],
 		},
 		{
 			name: "Silent+ Help",
