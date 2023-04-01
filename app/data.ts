@@ -1,4 +1,7 @@
+import custom_mods from "./articles/general/custom_mods";
+import faq from "./articles/general/faq";
 import partner_program from "./articles/general/partner_program";
+import tester_application from "./articles/general/tester_application";
 import Category from "./types/Category";
 
 export function getData() {
@@ -8,7 +11,7 @@ export function getData() {
 			icon: "/assets/icons/categories/general.svg",
 			description: "Partnerships, staff applications, and FAQs.",
 			link: "general",
-			articles: [partner_program],
+			articles: [partner_program, tester_application, custom_mods, faq],
 		},
 		{
 			name: "Account Management",
