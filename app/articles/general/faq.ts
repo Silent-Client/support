@@ -12,9 +12,6 @@ const article = {
 	<h3>Where can I report game bugs?</h3>
 	If you have found a game bug and want to report it to get it fixed as soon as possible, please follow the instructions in this help article: <a href="/article/submit-a-bug-report">click here</a>.
 	<br/><br/>
-	<h3>Where can I report game bugs?</h3>
-	If you have found a game bug and want to report it to get it fixed as soon as possible, please follow the instructions in this help article: <a href="/article/submit-a-bug-report">click here</a>.
-	<br/><br/>
 	<h3>What mods does the Silent Client use?</h3>
 	The Silent Client supports many mods; too many to list here. The Silent Client team is constantly updating them alongside adding new mods. You can find all mods in the game by pressing the RIGHT-SHIFT key.
 	<br/><br/>
