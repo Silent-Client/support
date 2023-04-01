@@ -8,6 +8,7 @@ import {
 	Heading,
 	Link,
 	Stack,
+	Text,
 } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
@@ -34,18 +35,25 @@ function Category({ category }: { category: Category }) {
 				<Heading size="lg" mt={5}>
 					{category.name}
 				</Heading>
-				<Stack direction={"column"} spacing={1} mt={5}>
-					{category.articles.map((article, key) => (
-						<Link
-							key={key}
-							_hover={{ textDecoration: "none", opacity: "0.8" }}
-							as={NextLink}
-							href={`/article/${article.link}`}
-						>
-							&gt; {article.name}
-						</Link>
-					))}
-				</Stack>
+				{(category.articles.length === 0 && (
+					<Text mt={5}>
+						There are no articles in this section yet. We are working on writing
+						articles for sections.
+					</Text>
+				)) || (
+					<Stack direction={"column"} spacing={1} mt={5}>
+						{category.articles.map((article, key) => (
+							<Link
+								key={key}
+								_hover={{ textDecoration: "none", opacity: "0.8" }}
+								as={NextLink}
+								href={`/article/${article.link}`}
+							>
+								&gt; {article.name}
+							</Link>
+						))}
+					</Stack>
+				)}
 			</Container>
 		</>
 	);
