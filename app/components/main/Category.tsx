@@ -3,6 +3,10 @@ import { Center, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 function Category({ category }: { category: Category }) {
+	if (category.articles.length === 0) {
+		return null;
+	}
+
 	return (
 		<Stack
 			spacing={3}
