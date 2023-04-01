@@ -1,4 +1,5 @@
 import { Box, ChakraProvider, Container, Stack } from "@chakra-ui/react";
+import { ReCaptchaProvider } from "next-recaptcha-v3";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -66,7 +67,11 @@ export default function App({ Component, pageProps }: AppProps) {
 							"4rem",
 						]}
 					>
-						<Component {...pageProps} />
+						{(router.pathname === "/new" && (
+							<ReCaptchaProvider reCaptchaKey="6LdtbNMkAAAAACPAfHBKb2-qi-e_SCed1pcFj6Zm">
+								<Component {...pageProps} />
+							</ReCaptchaProvider>
+						)) || <Component {...pageProps} />}
 					</Container>
 				</Box>
 

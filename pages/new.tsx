@@ -10,9 +10,9 @@ import {
 	useToast,
 } from "@chakra-ui/react";
 import axios from "axios";
+import { useReCaptcha } from "next-recaptcha-v3";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 function New() {
 	const [title, setTitle] = useState<string>("");
@@ -30,7 +30,7 @@ function New() {
 		setTitle(params.s || "");
 	}, []);
 
-	const { executeRecaptcha } = useGoogleReCaptcha();
+	const { executeRecaptcha } = useReCaptcha();
 
 	const submit = async () => {
 		setIsLoading(true);
