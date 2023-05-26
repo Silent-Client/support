@@ -3,7 +3,7 @@ const premium_and_plus = {
 	body: `The Premium and Premium+ ranks give you access to exclusive features to enhance your Minecraft gaming experience. It is also a great way to support our work and pursue the development of the Silent Client. You can purchase Premium and Premium+ in our store: <a href="https://store.silentclient.net/premium">https://store.silentclient.net/premium</a>
 	<br/><br/>
 	<h3>Enabling Beta Mode & Having Early Access to New Features</h3>
-	Both the Premium and the Premium+ rank allow you to have early access to the new features of the Badlion Client. You can play on the Beta version by ticking the "Beta" option above the launch button.<br/><br/>
+	Both the Premium and the Premium+ rank allow you to have early access to the new features of the Silent Client. You can play on the Beta version by ticking the "Beta" option above the launch button.<br/><br/>
 	<img src="/article_attachments/premium-and-premium-plus-ranks/beta.png" width="500px"/>
 	<br/><br/>
 	<h3>Opening Premium settings</h3>
