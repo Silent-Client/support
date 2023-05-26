@@ -24,7 +24,7 @@ function Category({ category }: { category: Category }) {
 				<Breadcrumb>
 					<BreadcrumbItem>
 						<BreadcrumbLink as={NextLink} href={`/`}>
-							Home
+							Silent Support
 						</BreadcrumbLink>
 					</BreadcrumbItem>
 
@@ -32,8 +32,11 @@ function Category({ category }: { category: Category }) {
 						<BreadcrumbLink>{category.name}</BreadcrumbLink>
 					</BreadcrumbItem>
 				</Breadcrumb>
-				<Heading size="lg" mt={5}>
+				<Heading size="lg" textTransform={"uppercase"} mt={5}>
 					{category.name}
+				</Heading>
+				<Heading size="xs" textTransform={"uppercase"} mt={2}>
+					{category.description}
 				</Heading>
 				{(category.articles.length === 0 && (
 					<Text mt={5}>

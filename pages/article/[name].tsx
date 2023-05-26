@@ -11,10 +11,10 @@ import {
 	Link,
 	Text,
 } from "@chakra-ui/react";
+import parse from "html-react-parser";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import NextLink from "next/link";
-import ReactHtmlParser from "react-html-parser";
 import styles from "../../styles/Article.module.css";
 
 function Article({
@@ -33,7 +33,7 @@ function Article({
 				<Breadcrumb>
 					<BreadcrumbItem>
 						<BreadcrumbLink as={NextLink} href={`/`}>
-							Home
+							Silent Support
 						</BreadcrumbLink>
 					</BreadcrumbItem>
 
@@ -47,11 +47,11 @@ function Article({
 						<BreadcrumbLink>{article.name}</BreadcrumbLink>
 					</BreadcrumbItem>
 				</Breadcrumb>
-				<Heading size="lg" mt={5}>
+				<Heading textTransform={"uppercase"} size="lg" mt={5}>
 					{article.name}
 				</Heading>
 				<Text mt={5} className={styles.article}>
-					{ReactHtmlParser(article.body)}
+					{parse(article.body)}
 				</Text>
 				<Center>
 					<Text mt={5}>

@@ -2,8 +2,8 @@ const article = {
 	name: "Youtuber/Twitch Partner Program",
 	body: `<h3>Benefits:</h3>
 	<ul>
-		<li>Custom cape and bandana on our shop</li>
-		<li>Silent+ Perks</li>
+		<li>Custom Cape, Bandana, Shield and Hat on our shop</li>
+		<li>Premium+ Perks</li>
 		<li>Access to all cosmetics on Silent Client</li>
 		<li>Ability to change Twitch/Youtube Icon</li>
 		<li>Private Discord access with our development/administration teams</li>

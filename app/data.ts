@@ -1,14 +1,24 @@
+import change_data from "./articles/account/change_data";
 import change_password from "./articles/account/change_password";
 import register from "./articles/account/register";
 import custom_mods from "./articles/general/custom_mods";
 import faq from "./articles/general/faq";
 import partner_program from "./articles/general/partner_program";
 import tester_application from "./articles/general/tester_application";
+import premium_and_plus from "./articles/premium/premium_and_plus";
 import adding_ram from "./articles/support/adding_ram";
 import bug_report from "./articles/support/bug_report";
 import game_no_sound from "./articles/support/game_no_sound";
 import updating_windows from "./articles/support/updating_windows";
+import Article from "./types/Article";
 import Category from "./types/Category";
+
+export function articleFormatter(article: Article): Article {
+	return {
+		...article,
+		body: article.body.replaceAll("\n", "").replaceAll("\t", ""),
+	};
+}
 
 export function getData() {
 	return [
@@ -17,14 +27,23 @@ export function getData() {
 			icon: "/assets/icons/categories/general.svg",
 			description: "Partnerships, staff applications, and FAQs.",
 			link: "general",
-			articles: [partner_program, tester_application, custom_mods, faq],
+			articles: [
+				articleFormatter(partner_program),
+				articleFormatter(tester_application),
+				articleFormatter(custom_mods),
+				articleFormatter(faq),
+			],
 		},
 		{
 			name: "Account Management",
 			icon: "/assets/icons/categories/account.svg",
 			description: "Registering and Managing the Silent Client Account.",
 			link: "account",
-			articles: [register, change_password],
+			articles: [
+				articleFormatter(register),
+				articleFormatter(change_data),
+				articleFormatter(change_password),
+			],
 		},
 		{
 			name: "Support Center",
@@ -32,14 +51,19 @@ export function getData() {
 			description:
 				"Payment Support, Technical Support, and Vanilla Minecraft Problems.",
 			link: "support",
-			articles: [adding_ram, game_no_sound, bug_report, updating_windows],
+			articles: [
+				articleFormatter(adding_ram),
+				articleFormatter(game_no_sound),
+				articleFormatter(bug_report),
+				articleFormatter(updating_windows),
+			],
 		},
 		{
-			name: "Silent+ Help",
-			icon: "/assets/icons/categories/plus.svg",
-			description: "Silent+ and Its Features and Custom Capes.",
-			link: "plus",
-			articles: [],
+			name: "Premium Rank Help",
+			icon: "/assets/icons/categories/premium.png",
+			description: "Silent Premium and Its Features and Custom Capes.",
+			link: "premium",
+			articles: [articleFormatter(premium_and_plus)],
 		},
 		{
 			name: "Silent Client Settings",

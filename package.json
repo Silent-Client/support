@@ -20,11 +20,11 @@
 		"eslint": "8.37.0",
 		"eslint-config-next": "13.2.4",
 		"framer-motion": "^10.10.0",
+		"html-react-parser": "^3.0.16",
 		"next": "13.2.4",
 		"next-recaptcha-v3": "^1.1.5",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-html-parser": "^2.0.2",
 		"react-icons": "^4.8.0",
 		"typescript": "5.0.3"
 	},
