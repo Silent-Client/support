@@ -19,6 +19,7 @@ function Category({ category }: { category: Category }) {
 		<>
 			<Head>
 				<title>{`${category.name} – Silent Client Support`}</title>
+				<meta name="description" content={`${category.description}`} />
 			</Head>
 			<Container minW="full">
 				<Breadcrumb>

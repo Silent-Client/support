@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta
 					name="description"
-					content="Convenient pvp client for Minecraft with 30+ mods, FPS Boost, Optifine and cosmetics."
+					content="Find the answer to your question or ask it in Silent Client Support."
 				/>
 				<link rel="icon" href="/favicon.ico" />
 				<link

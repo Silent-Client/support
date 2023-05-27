@@ -1,4 +1,5 @@
 import { getData } from "@/app/data";
+import { cutTags } from "@/app/stringUtils";
 import Article from "@/app/types/Article";
 import Category from "@/app/types/Category";
 import {
@@ -28,6 +29,10 @@ function Article({
 		<>
 			<Head>
 				<title>{`${article.name} – Silent Client Support`}</title>
+				<meta
+					name="description"
+					content={`${cutTags(article.body).slice(0, 136)}...`}
+				/>
 			</Head>
 			<Container minW="full">
 				<Breadcrumb>
