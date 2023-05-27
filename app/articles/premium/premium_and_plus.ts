@@ -33,7 +33,13 @@ The Premium and Premium+ icons can be seen by anyone who uses the Silent Client.
 <br/>
 The Premium+ custom message lets you add a custom message above your name!
 <br/>
-You can add your nametag message by clicking on the text field at the bottom of Premium settings, writing a message, and clicking on the "Save" button.`,
+You can add your nametag message by clicking on the text field at the bottom of Premium settings, writing a message, and clicking on the "Save" button.
+<br/><br/>
+<h3>Premium+ Custom Capes</h3>
+<br/>
+Create your own custom cape with the Premium+ feature. Your cape will be seen by every player who uses the Silent Client.
+<br/>
+You can find more information about HD skins in this help article: <a href="/article/custom-capes">https://support.silentclient.net/article/custom-capes</a>`,
 	link: "premium-and-premium-plus-ranks",
 };
 

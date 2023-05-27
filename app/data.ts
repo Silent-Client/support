@@ -5,6 +5,7 @@ import custom_mods from "./articles/general/custom_mods";
 import faq from "./articles/general/faq";
 import partner_program from "./articles/general/partner_program";
 import tester_application from "./articles/general/tester_application";
+import custom_capes from "./articles/premium/custom_capes";
 import premium_and_plus from "./articles/premium/premium_and_plus";
 import adding_ram from "./articles/support/adding_ram";
 import bug_report from "./articles/support/bug_report";
@@ -63,7 +64,10 @@ export function getData() {
 			icon: "/assets/icons/categories/premium.png",
 			description: "Silent Premium and Its Features and Custom Capes.",
 			link: "premium",
-			articles: [articleFormatter(premium_and_plus)],
+			articles: [
+				articleFormatter(premium_and_plus),
+				articleFormatter(custom_capes),
+			],
 		},
 		{
 			name: "Silent Client Settings",
