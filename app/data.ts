@@ -1,6 +1,7 @@
 import change_data from "./articles/account/change_data";
 import change_password from "./articles/account/change_password";
 import register from "./articles/account/register";
+import client_mod_application from "./articles/general/client_mod_application";
 import custom_mods from "./articles/general/custom_mods";
 import faq from "./articles/general/faq";
 import partner_program from "./articles/general/partner_program";
@@ -30,9 +31,10 @@ export function getData() {
 			link: "general",
 			articles: [
 				articleFormatter(partner_program),
-				articleFormatter(tester_application),
 				articleFormatter(custom_mods),
 				articleFormatter(faq),
+				articleFormatter(client_mod_application),
+				articleFormatter(tester_application),
 			],
 		},
 		{
