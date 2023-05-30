@@ -1,6 +1,13 @@
 import { Center, Link, Stack, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { FaDiscord, FaTelegram, FaVk } from "react-icons/fa";
+import {
+	FaDiscord,
+	FaTelegram,
+	FaTiktok,
+	FaTwitter,
+	FaVk,
+	FaYoutube,
+} from "react-icons/fa";
 import { MenuItems } from "../header";
 
 function Footer() {
@@ -36,7 +43,18 @@ function Footer() {
 				</Center>
 
 				<Center h="42px">
-					<Stack direction="row" spacing={5}>
+					<Stack direction="row" alignItems={"center"} spacing={5}>
+						<Link
+							transition="opacity 0.2s ease-in-out"
+							href="https://dsc.gg/silentclient"
+							color="#c9c9c9"
+							isExternal
+							_hover={{
+								opacity: "0.5",
+							}}
+						>
+							<FaDiscord size={25} />
+						</Link>
 						<Link
 							transition="opacity 0.2s ease-in-out"
 							href="https://t.me/silent_client"
@@ -50,6 +68,39 @@ function Footer() {
 						</Link>
 						<Link
 							transition="opacity 0.2s ease-in-out"
+							href="https://twitter.com/SilentClientMC"
+							color="#c9c9c9"
+							isExternal
+							_hover={{
+								opacity: "0.5",
+							}}
+						>
+							<FaTwitter size={25} />
+						</Link>
+						<Link
+							transition="opacity 0.2s ease-in-out"
+							href="https://www.youtube.com/@SilentClientMC"
+							color="#c9c9c9"
+							isExternal
+							_hover={{
+								opacity: "0.5",
+							}}
+						>
+							<FaYoutube size={25} />
+						</Link>
+						<Link
+							transition="opacity 0.2s ease-in-out"
+							href="https://www.tiktok.com/@SilentClientMC"
+							color="#c9c9c9"
+							isExternal
+							_hover={{
+								opacity: "0.5",
+							}}
+						>
+							<FaTiktok size={20} />
+						</Link>
+						<Link
+							transition="opacity 0.2s ease-in-out"
 							href="https://vk.com/silentclient"
 							color="#c9c9c9"
 							isExternal
@@ -58,18 +109,6 @@ function Footer() {
 							}}
 						>
 							<FaVk size={25} />
-						</Link>
-
-						<Link
-							transition="opacity 0.2s ease-in-out"
-							href="https://discord.gg/eaZYXEBRaE"
-							color="#c9c9c9"
-							isExternal
-							_hover={{
-								opacity: "0.5",
-							}}
-						>
-							<FaDiscord size={25} />
 						</Link>
 					</Stack>
 				</Center>
