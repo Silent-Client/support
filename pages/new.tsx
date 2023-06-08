@@ -5,7 +5,9 @@ import {
 	FormLabel,
 	Heading,
 	Input,
+	Link,
 	Stack,
+	Text,
 	Textarea,
 	useToast,
 } from "@chakra-ui/react";
@@ -141,6 +143,33 @@ function New() {
 					<Button isDisabled={isLoading} onClick={submit}>
 						Submit
 					</Button>
+					<Text fontSize={"sm"}>
+						This site is protected by reCAPTCHA and the Google{" "}
+						<Link
+							textDecoration={"underline"}
+							_hover={{
+								textDecoration: "none",
+								color: "gray.300",
+							}}
+							href="https://policies.google.com/privacy"
+							isExternal
+						>
+							Privacy Policy
+						</Link>{" "}
+						and{" "}
+						<Link
+							textDecoration={"underline"}
+							_hover={{
+								textDecoration: "none",
+								color: "gray.300",
+							}}
+							href="https://policies.google.com/terms"
+							isExternal
+						>
+							Terms of Service
+						</Link>{" "}
+						apply.
+					</Text>
 				</Stack>
 			</Container>
 		</>
