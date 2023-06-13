@@ -72,6 +72,7 @@ function Article({
 						<Stack direction={"column"} spacing={"3px"}>
 							{category.articles.map(a => (
 								<Link
+									key={a.link}
 									p="10px"
 									fontWeight={a.link === article.link ? "bold" : "normal"}
 									as={NextLink}

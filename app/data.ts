@@ -8,6 +8,7 @@ import partner_program from "./articles/general/partner_program";
 import tester_application from "./articles/general/tester_application";
 import custom_capes from "./articles/premium/custom_capes";
 import premium_and_plus from "./articles/premium/premium_and_plus";
+import general from "./articles/settings/general";
 import adding_ram from "./articles/support/adding_ram";
 import bug_report from "./articles/support/bug_report";
 import game_no_sound from "./articles/support/game_no_sound";
@@ -78,7 +79,7 @@ export function getData() {
 			icon: "/assets/icons/categories/settings.svg",
 			description: "Silent Client Settings and Cosmetics.",
 			link: "settings",
-			articles: [],
+			articles: [articleFormatter(general)],
 		},
 		{
 			name: "Mods and Features",
