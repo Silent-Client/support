@@ -5,6 +5,7 @@ const article = {
 <br/><br/>
 This also means that you cannot use Silent Client with Forge as the mods were coded for Silent Client and not Forge.`,
 	link: "adding-mods-to-silent-client-or-using-it-with-forge",
+	author: "kirillsaint",
 };
 
 export default article;

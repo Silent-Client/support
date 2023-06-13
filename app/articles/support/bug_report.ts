@@ -10,6 +10,7 @@ const article = {
 	</ul>
 	Once you have submitted a bug report, our Tech Support team should review and respond to it within a few hours.`,
 	link: "submit-a-bug-report",
+	author: "kirillsaint",
 };
 
 export default article;

@@ -36,6 +36,7 @@ const article = {
 	Anyone who is a content creator that meets our requirements listed out can contact creators@silentclient.net.
 	`,
 	link: "youtuber-twitch-partner-program",
+	author: "kirillsaint",
 };
 
 export default article;

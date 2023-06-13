@@ -15,6 +15,7 @@ const article = {
 	<h6>Step five:</h6>
 	The email will contain the generated password, use it to log into your account.`,
 	link: "reseting-your-password",
+	author: "kirillsaint",
 };
 
 export default article;

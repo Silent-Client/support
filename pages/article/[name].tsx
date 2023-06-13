@@ -3,13 +3,17 @@ import { cutTags } from "@/app/stringUtils";
 import Article from "@/app/types/Article";
 import Category from "@/app/types/Category";
 import {
+	Avatar,
+	Box,
 	Breadcrumb,
 	BreadcrumbItem,
 	BreadcrumbLink,
 	Center,
 	Container,
+	Flex,
 	Heading,
 	Link,
+	Stack,
 	Text,
 } from "@chakra-ui/react";
 import parse from "html-react-parser";
@@ -34,7 +38,7 @@ function Article({
 					content={`${cutTags(article.body).slice(0, 136)}...`}
 				/>
 			</Head>
-			<Container minW="full">
+			<Container maxW="full" w="full">
 				<Breadcrumb>
 					<BreadcrumbItem>
 						<BreadcrumbLink as={NextLink} href={`/`}>
@@ -52,27 +56,85 @@ function Article({
 						<BreadcrumbLink>{article.name}</BreadcrumbLink>
 					</BreadcrumbItem>
 				</Breadcrumb>
-				<Heading textTransform={"uppercase"} size="lg" mt={5}>
-					{article.name}
-				</Heading>
-				<Text mt={5} className={styles.article}>
-					{parse(article.body)}
-				</Text>
-				<Center>
-					<Text mt={5}>
-						Have more questions?{" "}
-						<Link
-							textDecoration={"underline"}
-							_hover={{
-								opacity: "0.8",
-							}}
-							as={NextLink}
-							href="/new"
+				<Flex mt={10} direction={"row"}>
+					<Stack
+						display={{
+							base: "none",
+							lg: "flex",
+						}}
+						flex={{
+							lg: "0 0 17%",
+						}}
+						direction={"column"}
+						spacing={2}
+					>
+						<Heading size={"sm"}>ARTICLES IN THIS SECTION</Heading>
+						<Stack direction={"column"} spacing={"3px"}>
+							{category.articles.map(a => (
+								<Link
+									p="10px"
+									fontWeight={a.link === article.link ? "bold" : "normal"}
+									as={NextLink}
+									href={a.link}
+								>
+									{a.name}
+								</Link>
+							))}
+						</Stack>
+					</Stack>
+					<Box
+						flex={{
+							lg: "1 0 66%",
+						}}
+						maxW={{
+							lg: "66%",
+						}}
+						minW={{
+							lg: "640px",
+						}}
+						padding={{
+							lg: "0 30px",
+						}}
+					>
+						<Heading textTransform={"uppercase"} size="lg">
+							{article.name}
+						</Heading>
+
+						<Stack
+							alignItems={"center"}
+							mt={2}
+							direction={"row"}
+							spacing={1}
+							as={Link}
+							href={`https://silentclient.net/u/${article.author}`}
 						>
-							Submit a request
-						</Link>
-					</Text>
-				</Center>
+							<Avatar
+								src={`https://mc-heads.net/avatar/${article.author}.png`}
+								size={"sm"}
+							></Avatar>
+							<Text fontSize="md">{article.author}</Text>
+						</Stack>
+
+						<Text mt={5} className={styles.article}>
+							{parse(article.body)}
+						</Text>
+						<Center>
+							<Text mt={5}>
+								Have more questions?{" "}
+								<Link
+									textDecoration={"underline"}
+									_hover={{
+										opacity: "0.8",
+									}}
+									as={NextLink}
+									href="/new"
+								>
+									Submit a request
+								</Link>
+							</Text>
+						</Center>
+					</Box>
+				</Flex>
 			</Container>
 		</>
 	);

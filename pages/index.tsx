@@ -1,7 +1,7 @@
 import Category from "@/app/components/main/Category";
 import { getData } from "@/app/data";
 import CategoryType from "@/app/types/Category";
-import { Center, Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Center, Container, Flex, Heading } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import Head from "next/head";
 
@@ -13,13 +13,13 @@ export default function Home({ categories }: { categories: CategoryType[] }) {
 			</Head>
 			<Container minW="full">
 				<Center>
-					<Heading>Silent Client Support</Heading>
+					<Heading textAlign={"center"}>What can we help you with?</Heading>
 				</Center>
-				<SimpleGrid mt={5} columns={[1, 2, 3]} spacing={5}>
+				<Flex flexWrap={"wrap"} mt={5}>
 					{categories.map((category, key) => (
 						<Category key={key} category={category} />
 					))}
-				</SimpleGrid>
+				</Flex>
 			</Container>
 		</>
 	);

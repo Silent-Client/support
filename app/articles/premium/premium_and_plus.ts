@@ -41,6 +41,7 @@ Create your own custom cape with the Premium+ feature. Your cape will be seen by
 <br/>
 You can find more information about HD skins in this help article: <a href="/article/custom-capes">https://support.silentclient.net/article/custom-capes</a>`,
 	link: "premium-and-premium-plus-ranks",
+	author: "kirillsaint",
 };
 
 export default premium_and_plus;

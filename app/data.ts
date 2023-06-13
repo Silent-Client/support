@@ -11,6 +11,7 @@ import premium_and_plus from "./articles/premium/premium_and_plus";
 import adding_ram from "./articles/support/adding_ram";
 import bug_report from "./articles/support/bug_report";
 import game_no_sound from "./articles/support/game_no_sound";
+import multiplayer_issues from "./articles/support/multiplayer_issues";
 import updating_windows from "./articles/support/updating_windows";
 import Article from "./types/Article";
 import Category from "./types/Category";
@@ -59,6 +60,7 @@ export function getData() {
 				articleFormatter(game_no_sound),
 				articleFormatter(bug_report),
 				articleFormatter(updating_windows),
+				articleFormatter(multiplayer_issues),
 			],
 		},
 		{
@@ -74,7 +76,7 @@ export function getData() {
 		{
 			name: "Silent Client Settings",
 			icon: "/assets/icons/categories/settings.svg",
-			description: "Launcher Settings, Silent Client Settings and Cosmetics.",
+			description: "Silent Client Settings and Cosmetics.",
 			link: "settings",
 			articles: [],
 		},

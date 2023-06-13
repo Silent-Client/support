@@ -21,6 +21,7 @@ const article = {
 	<br/><br/>
 	Do not contact any staff members regarding your application, as it will result in an instant denial. `,
 	link: "tester-application",
+	author: "kirillsaint",
 };
 
 export default article;

@@ -14,6 +14,7 @@ const article = {
 	</li>
 	</ul>`,
 	link: "adding-more-memory-ram-to-your-silent-client",
+	author: "kirillsaint",
 };
 
 export default article;

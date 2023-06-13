@@ -11,6 +11,7 @@ const article = {
 	<h6>Step three:</h6>
 	Congratulations, and welcome to Silent Client! You have successfully registered on Silent Client!`,
 	link: "registering-for-silent-client",
+	author: "kirillsaint",
 };
 
 export default article;

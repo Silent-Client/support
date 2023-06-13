@@ -5,6 +5,7 @@ const article = {
 	We tried to simplify the interface as much as possible so that even a child could figure it out.<br/><br/>
 	<img src="/article_attachments/changing-your-email-password-and-privacy-settings/screenshot.png" width="500px"/>`,
 	link: "changing-your-email-password-and-privacy-settings",
+	author: "kirillsaint",
 };
 
 export default article;

@@ -18,6 +18,7 @@ const custom_capes = {
 	<br/>
 	<img src="/article_attachments/custom-capes/create_cape.png" width="500px"/>`,
 	link: `custom-capes`,
+	author: "kirillsaint",
 };
 
 export default custom_capes;

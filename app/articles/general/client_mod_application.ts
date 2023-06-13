@@ -64,6 +64,7 @@ const client_mod_application = {
 	<h3>How to Apply?</h3>
 	Apply now by emailing the filled in format to <a href="mailto:clientmod@silentclient.net">clientmod@silentclient.net</a> with the subject: <b>"Silent Client Mod Team Application”</b> and you could be the next person to join the Client Moderation team!`,
 	link: "client-mod-application",
+	author: "kirillsaint",
 };
 
 export default client_mod_application;

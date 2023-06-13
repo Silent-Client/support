@@ -9,6 +9,11 @@ function Category({ category }: { category: Category }) {
 
 	return (
 		<Stack
+			flex={"1 0 330px"}
+			margin={{
+				base: "0 0 30px",
+				md: "0 15px 30px",
+			}}
 			spacing={3}
 			bgColor={"rgb(19, 19, 19)"}
 			borderRadius={"lg"}

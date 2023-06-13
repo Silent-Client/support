@@ -34,6 +34,7 @@ const updating_windows = {
 	<li>Once it is done this notification will pop up; and then&nbsp;<strong>restart your computer.</strong><br><img src="/article_attachments/updating-windows-and-graphics-driver/Screenshot_11.png" alt="2Mwvb-0lQ4aEx2UFYEkxOA.png"></li>
 	</ol>`,
 	link: "updating-windows-and-graphics-driver",
+	author: "kirillsaint",
 };
 
 export default updating_windows;

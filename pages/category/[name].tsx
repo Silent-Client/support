@@ -33,7 +33,7 @@ function Category({ category }: { category: Category }) {
 						<BreadcrumbLink>{category.name}</BreadcrumbLink>
 					</BreadcrumbItem>
 				</Breadcrumb>
-				<Heading size="lg" textTransform={"uppercase"} mt={5}>
+				<Heading size="lg" textTransform={"uppercase"} mt={10}>
 					{category.name}
 				</Heading>
 				<Heading size="xs" textTransform={"uppercase"} mt={2}>

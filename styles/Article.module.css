@@ -7,11 +7,11 @@
 }
 
 .article ul {
-	margin-left: 20px;
+	margin-left: 30px;
 }
 
 .article ol {
-	margin-left: 20px;
+	margin-left: 30px;
 }
 
 .article a {
@@ -20,4 +20,17 @@
 
 .article a:hover {
 	opacity: 0.8;
+}
+
+.article code {
+	display: inline-block;
+	font-family: var(--silentclient-fonts-mono);
+	font-size: var(--silentclient-fontSizes-sm);
+	padding-inline: 0.2em;
+	border-radius: var(--silentclient-radii-sm);
+	background: var(--badge-bg);
+	color: var(--badge-color);
+	box-shadow: var(--badge-shadow);
+	--badge-bg: rgba(226, 232, 240, 0.16);
+	--badge-color: var(--chakra-colors-gray-200);
 }

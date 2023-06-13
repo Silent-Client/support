@@ -14,6 +14,7 @@ const article = {
 	<br/><br/>
 	If the same issue persists, please <a href="/article/submit-a-bug-report">submit a bug report</a> through the launcher immediately after having this issue.`,
 	link: "game-has-no-sound",
+	author: "kirillsaint",
 };
 
 export default article;

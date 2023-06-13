@@ -25,6 +25,7 @@ const article = {
 	- Telegram (<a href="https://t.me/silent_client">click here</a>)<br/>
 	- VK (<a href="https://vk.com/silentclient">click here</a>)`,
 	link: "silent-client-faq",
+	author: "kirillsaint",
 };
 
 export default article;
