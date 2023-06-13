@@ -34,3 +34,7 @@
 	--badge-bg: rgba(226, 232, 240, 0.16);
 	--badge-color: var(--chakra-colors-gray-200);
 }
+
+.article img {
+	box-shadow: 0px 0px 9px 2px #151515;
+}

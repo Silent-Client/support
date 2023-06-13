@@ -31,6 +31,7 @@ const multiplayer_issues = {
 	<li>Click Open, then Add.</li>
 	<li>Click OK and open Silent Client again.</li>
 	</ol>
+	<br/>
 	<b>If you are using Vanilla Minecraft:</b>
 	<ol>
 	<li>Press the Windows Key and type "firewall."</li>

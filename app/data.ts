@@ -8,7 +8,11 @@ import partner_program from "./articles/general/partner_program";
 import tester_application from "./articles/general/tester_application";
 import custom_capes from "./articles/premium/custom_capes";
 import premium_and_plus from "./articles/premium/premium_and_plus";
-import general from "./articles/settings/general";
+import cosmetics_menu from "./articles/settings/cosmetics_menu";
+import fps_boost_settings from "./articles/settings/fps_boost_settings";
+import general_settings from "./articles/settings/general_settings";
+import render_settings from "./articles/settings/render_settings";
+import turning_cosmetics from "./articles/settings/turning_cosmetics";
 import adding_ram from "./articles/support/adding_ram";
 import bug_report from "./articles/support/bug_report";
 import game_no_sound from "./articles/support/game_no_sound";
@@ -79,7 +83,13 @@ export function getData() {
 			icon: "/assets/icons/categories/settings.svg",
 			description: "Silent Client Settings and Cosmetics.",
 			link: "settings",
-			articles: [articleFormatter(general)],
+			articles: [
+				articleFormatter(general_settings),
+				articleFormatter(render_settings),
+				articleFormatter(fps_boost_settings),
+				articleFormatter(cosmetics_menu),
+				articleFormatter(turning_cosmetics),
+			],
 		},
 		{
 			name: "Mods and Features",

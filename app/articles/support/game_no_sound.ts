@@ -10,7 +10,7 @@ const article = {
 	<br/><br/>
 	<h6>Try reloading resources.</h6>
 	To do that, you need to connect to a server or singleplayer world, then press the ESC key on your keyboard, and then click on the "Reload Resources" button at the bottom left corner.
-	<img src="/article_attachments/game-has-no-sound/Screenshot_3.png" width="500px" />
+	<img src="/article_attachments/game-has-no-sound/Screenshot_3.png"  />
 	<br/><br/>
 	If the same issue persists, please <a href="/article/submit-a-bug-report">submit a bug report</a> through the launcher immediately after having this issue.`,
 	link: "game-has-no-sound",

@@ -19,9 +19,11 @@ function Category({ category }: { category: Category }) {
 			borderRadius={"lg"}
 			boxShadow={"rgba(0, 0, 0, 0.1) 0px 15px 9px 0px"}
 			p={5}
-			transition={"outline 200ms"}
+			transition={"border-color 200ms"}
+			borderWidth={"1px"}
+			borderColor={"transparent"}
 			_hover={{
-				outline: "1px solid white",
+				borderColor: "white",
 				textDecoration: "none",
 			}}
 			as={NextLink}

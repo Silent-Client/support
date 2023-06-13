@@ -8,9 +8,9 @@ const article = {
 	If you want to change the amount of allocated memory, you need to do the following:
 	<ul>
 	<li>Open the Silent Client launcher and click the "Settings" button, as shown in the screenshot below.
-	<img src="/article_attachments/adding-more-memory-ram-to-your-silent-client/Screenshot_1.png" width="500px" /></li>
+	<img src="/article_attachments/adding-more-memory-ram-to-your-silent-client/Screenshot_1.png"  /></li>
 	<li>Find "Allocate RAM (MB)" slider. You can click anywhere on the slider to change the amount of the allocated memory.
-	<img src="/article_attachments/adding-more-memory-ram-to-your-silent-client/Screenshot_2.png" width="500px"/>
+	<img src="/article_attachments/adding-more-memory-ram-to-your-silent-client/Screenshot_2.png" />
 	</li>
 	</ul>`,
 	link: "adding-more-memory-ram-to-your-silent-client",

@@ -6,7 +6,7 @@ const custom_capes = {
 	<h3>Finding the Custom Capes menu</h3>
 	To open the Custom Capes menu: <a href="https://store.silentclient.net/premium/custom_cape">Click Here</a>
 	<br/>
-	<img src="/article_attachments/custom-capes/menu.png" width="500px"/>
+	<img src="/article_attachments/custom-capes/menu.png" />
 	<br/><br>
 	<h3>Uploading and using Custom Capes</h3>
 	To download a Custom Cape, click the "Create Custom Cape" button and fill in all the fields.
@@ -16,7 +16,7 @@ const custom_capes = {
 	<br/><br/>
 	If your custom cape is approved, you will be able to select it from the cosmetics menu.
 	<br/>
-	<img src="/article_attachments/custom-capes/create_cape.png" width="500px"/>`,
+	<img src="/article_attachments/custom-capes/create_cape.png" />`,
 	link: `custom-capes`,
 	author: "kirillsaint",
 };

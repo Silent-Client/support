@@ -1,6 +1,6 @@
 const client_mod_application = {
 	name: "Client Mod Application",
-	body: `<img width="500px" src="/article_attachments/client-mod-application/client_mod_promo.png" /><br/>
+	body: `<img  src="/article_attachments/client-mod-application/client_mod_promo.png" /><br/>
 	<b>Description of the position:</b> The Client Moderator position is the front page of the client. It’s a combination of in-game moderation, Discord moderation, and user support. We currently have 2 platforms for support; our Discord and Support Platform.
 	<br/><br/>
 	It is important that all aspects of our client are kept up-to-date, clean of toxicity and resourceful at all times. By joining our team, you will receive help from experienced staff members to develop an understanding of the problems most users face and how to resolve them.
