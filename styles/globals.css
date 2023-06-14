@@ -21,3 +21,7 @@ button:focus {
 * {
 	scroll-behavior: smooth;
 }
+
+.breadcrumb ol {
+	flex-wrap: wrap;
+}

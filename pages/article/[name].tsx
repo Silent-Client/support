@@ -39,7 +39,7 @@ function Article({
 				/>
 			</Head>
 			<Container maxW="full" w="full">
-				<Breadcrumb>
+				<Breadcrumb className="breadcrumb">
 					<BreadcrumbItem>
 						<BreadcrumbLink as={NextLink} href={`/`}>
 							Silent Support

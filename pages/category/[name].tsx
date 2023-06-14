@@ -22,7 +22,7 @@ function Category({ category }: { category: Category }) {
 				<meta name="description" content={`${category.description}`} />
 			</Head>
 			<Container minW="full">
-				<Breadcrumb>
+				<Breadcrumb className="breadcrumb">
 					<BreadcrumbItem>
 						<BreadcrumbLink as={NextLink} href={`/`}>
 							Silent Support
