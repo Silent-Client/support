@@ -12,6 +12,18 @@ const article = {
 	<li>Attempting to break the game</li>
 	<li>Playing the game</li>
 	</ul>
+
+	<br/><br/>
+	<h3>Requirements</h3>
+	<ul>
+	<li>At least 14 years old</li>
+	<li>A team-orientated mindset</li>
+	<li>At least a few hours a week can be put toward testing	</li>
+	<li>Good communication</li>
+	<li>In-depth knowledge of the Silent Client</li>
+	<li>Detailed application</li>
+	<li>BONUS: High level in (a) specific game mode(s) (e.g. Bedwars, Skywars)</li>
+	</ul>
 	
 	<br/><br/>
 	<h3>How to apply</h3>
