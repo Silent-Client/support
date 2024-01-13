@@ -49,7 +49,7 @@ function Header() {
 	}, []);
 
 	return (
-		<Box bgColor="black" w="full" as="header">
+		<Box bgColor="#131313" w="full" as="header">
 			<Container
 				maxW={["full", "full", "full", "full", "full", "90%"]}
 				paddingInlineStart={[
@@ -129,7 +129,7 @@ function Header() {
 									<MenuItem
 										bgColor={"black"}
 										_hover={{
-											bgColor: "#131313",
+											bgColor: "#171717",
 										}}
 										as={NextLink}
 										href={link.to}

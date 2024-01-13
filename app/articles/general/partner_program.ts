@@ -33,7 +33,7 @@ const article = {
 	4) Most recent youtube video:<br/>
 	<br/>
 	<h3>How to Apply</h3>
-	Anyone who is a content creator that meets our requirements listed out can contact creators@silentclient.net.
+	To apply, fill out the form at the link: <a href="/application/partner-program">support.silentclient.net/application/partner-program</a>
 	`,
 	link: "youtuber-twitch-partner-program",
 	author: "kirillsaint",

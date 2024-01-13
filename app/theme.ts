@@ -9,7 +9,7 @@ export default extendTheme({
 		global: {
 			body: {
 				color: "white",
-				backgroundColor: "black",
+				backgroundColor: "#131313",
 			},
 		},
 	},

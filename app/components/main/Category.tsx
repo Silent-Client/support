@@ -15,7 +15,7 @@ function Category({ category }: { category: Category }) {
 				md: "0 15px 30px",
 			}}
 			spacing={3}
-			bgColor={"rgb(19, 19, 19)"}
+			bgColor={"#171717"}
 			borderRadius={"lg"}
 			boxShadow={"rgba(0, 0, 0, 0.1) 0px 15px 9px 0px"}
 			p={5}
