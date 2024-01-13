@@ -44,7 +44,7 @@ interface ApplicationForm {
 	};
 }
 
-function application() {
+function PartnerApplication() {
 	const toast = useToast();
 	const router = useRouter();
 
@@ -251,4 +251,4 @@ function application() {
 	);
 }
 
-export default application;
+export default PartnerApplication;
