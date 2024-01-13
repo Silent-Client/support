@@ -26,12 +26,6 @@ const article = {
 		<li>Have at least 20 hours of MC streamed per month for the past three months.</li>
 	</ul>
 	<br/>
-	<h3>Application</h3>
-	1) IGN:<br/>
-	2) Youtube Channel (if applicable):<br/>
-	3) Twitch Channel (if applicable):<br/>
-	4) Most recent youtube video:<br/>
-	<br/>
 	<h3>How to Apply</h3>
 	To apply, fill out the form at the link: <a href="/application/partner-program">support.silentclient.net/application/partner-program</a>
 	`,
