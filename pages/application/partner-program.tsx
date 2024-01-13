@@ -19,6 +19,7 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
@@ -45,20 +46,21 @@ interface ApplicationForm {
 
 function application() {
 	const toast = useToast();
+	const router = useRouter();
 
 	const [account, setAccount] = useState<{
 		original_username: string;
+		token: string;
 	} | null>(null);
 	const [activeApplication, setActiveApplication] =
 		useState<Application | null>(null);
 
-	const getActiveApplication = async () => {
-		const token = getQueryVariable("access_token");
+	const getActiveApplication = async (token?: string) => {
 		const { data } = await axios.get(
 			"https://api.silentclient.net/partner_program/get_application",
 			{
 				headers: {
-					Authorization: `Bearer ${token}`,
+					Authorization: `Bearer ${token || account?.token}`,
 				},
 			}
 		);
@@ -72,7 +74,14 @@ function application() {
 			const token = getQueryVariable("access_token");
 			if (token) {
 				try {
-					await getActiveApplication();
+					router.replace(
+						{
+							query: {},
+						},
+						undefined,
+						{ shallow: true }
+					);
+					await getActiveApplication(token);
 					const { data } = await axios.get(
 						"https://api.silentclient.net/account",
 						{
@@ -81,7 +90,10 @@ function application() {
 							},
 						}
 					);
-					setAccount(data.account);
+					setAccount({
+						token: token,
+						...data.account,
+					});
 				} catch (error) {
 					window.location.href = loginUrl;
 				}
@@ -99,14 +111,13 @@ function application() {
 		formState: { errors, isSubmitting },
 	} = useForm<ApplicationForm>();
 	const onSubmit: SubmitHandler<ApplicationForm> = async data => {
-		const token = getQueryVariable("access_token");
 		try {
 			await axios.post(
 				"https://api.silentclient.net/partner_program/send_application",
 				data,
 				{
 					headers: {
-						Authorization: `Bearer ${token}`,
+						Authorization: `Bearer ${account?.token}`,
 					},
 				}
 			);
