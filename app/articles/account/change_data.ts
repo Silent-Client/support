@@ -6,6 +6,8 @@ const article = {
 	<img src="/article_attachments/changing-your-email-password-and-privacy-settings/screenshot.png" />`,
 	link: "changing-your-email-password-and-privacy-settings",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121605-changing-your-email-password-and-privacy-settings",
 };
 
 export default article;

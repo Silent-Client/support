@@ -1,64 +1,20 @@
 import { getData } from "@/app/data";
 import Category from "@/app/types/Category";
-import {
-	Breadcrumb,
-	BreadcrumbItem,
-	BreadcrumbLink,
-	Container,
-	Heading,
-	Link,
-	Stack,
-	Text,
-} from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
-import NextLink from "next/link";
+import { useEffect } from "react";
 
 function Category({ category }: { category: Category }) {
+	useEffect(() => {
+		window.location.href = category.redirect;
+	}, []);
+
 	return (
 		<>
 			<Head>
 				<title>{`${category.name} – Silent Client Support`}</title>
 				<meta name="description" content={`${category.description}`} />
 			</Head>
-			<Container minW="full">
-				<Breadcrumb className="breadcrumb">
-					<BreadcrumbItem>
-						<BreadcrumbLink as={NextLink} href={`/`}>
-							Silent Support
-						</BreadcrumbLink>
-					</BreadcrumbItem>
-
-					<BreadcrumbItem isCurrentPage>
-						<BreadcrumbLink>{category.name}</BreadcrumbLink>
-					</BreadcrumbItem>
-				</Breadcrumb>
-				<Heading size="lg" textTransform={"uppercase"} mt={10}>
-					{category.name}
-				</Heading>
-				<Heading size="xs" textTransform={"uppercase"} mt={2}>
-					{category.description}
-				</Heading>
-				{(category.articles.length === 0 && (
-					<Text mt={5}>
-						There are no articles in this section yet. We are working on writing
-						articles for sections.
-					</Text>
-				)) || (
-					<Stack direction={"column"} spacing={1} mt={5}>
-						{category.articles.map((article, key) => (
-							<Link
-								key={key}
-								_hover={{ textDecoration: "none", opacity: "0.8" }}
-								as={NextLink}
-								href={`/article/${article.link}`}
-							>
-								&gt; {article.name}
-							</Link>
-						))}
-					</Stack>
-				)}
-			</Container>
 		</>
 	);
 }

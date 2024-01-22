@@ -19,6 +19,8 @@ const custom_capes = {
 	<img src="/article_attachments/custom-capes/create_cape.png" />`,
 	link: `custom-capes`,
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121614-custom-capes",
 };
 
 export default custom_capes;

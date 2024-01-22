@@ -12,6 +12,8 @@ const article = {
 	Congratulations, and welcome to Silent Client! You have successfully registered on Silent Client!`,
 	link: "registering-for-silent-client",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121604-registering-for-silent-client",
 };
 
 export default article;

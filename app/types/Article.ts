@@ -3,4 +3,5 @@ export default interface Article {
 	body: string;
 	link: string;
 	author: string;
+	redirect: string;
 }

@@ -35,6 +35,8 @@ export function getData() {
 			icon: "/assets/icons/categories/general.svg",
 			description: "Partnerships, staff applications, and FAQs.",
 			link: "general",
+			redirect:
+				"https://silentclient.freshdesk.com/support/solutions/154000103648",
 			articles: [
 				articleFormatter(partner_program),
 				articleFormatter(custom_mods),
@@ -48,6 +50,8 @@ export function getData() {
 			icon: "/assets/icons/categories/account.svg",
 			description: "Registering and Managing the Silent Client Account.",
 			link: "account",
+			redirect:
+				"https://silentclient.freshdesk.com/support/solutions/154000103670",
 			articles: [
 				articleFormatter(register),
 				articleFormatter(change_data),
@@ -60,6 +64,8 @@ export function getData() {
 			description:
 				"Payment Support, Technical Support, and Vanilla Minecraft Problems.",
 			link: "support",
+			redirect:
+				"https://silentclient.freshdesk.com/support/solutions/154000103671",
 			articles: [
 				articleFormatter(adding_ram),
 				articleFormatter(game_no_sound),
@@ -73,6 +79,8 @@ export function getData() {
 			icon: "/assets/icons/categories/premium.png",
 			description: "Silent Premium and Its Features and Custom Capes.",
 			link: "premium",
+			redirect:
+				"https://silentclient.freshdesk.com/support/solutions/154000103676",
 			articles: [
 				articleFormatter(premium_and_plus),
 				articleFormatter(custom_capes),
@@ -83,6 +91,8 @@ export function getData() {
 			icon: "/assets/icons/categories/settings.svg",
 			description: "Silent Client Settings and Cosmetics.",
 			link: "settings",
+			redirect:
+				"https://silentclient.freshdesk.com/support/solutions/154000103677",
 			articles: [
 				articleFormatter(general_settings),
 				articleFormatter(render_settings),
@@ -90,13 +100,6 @@ export function getData() {
 				articleFormatter(cosmetics_menu),
 				articleFormatter(turning_cosmetics),
 			],
-		},
-		{
-			name: "Mods and Features",
-			icon: "/assets/icons/categories/mods.svg",
-			description: "Simple and Complex Mods and Other Features.",
-			link: "mods",
-			articles: [],
 		},
 	] as Category[];
 }

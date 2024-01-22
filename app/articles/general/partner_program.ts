@@ -31,6 +31,8 @@ const article = {
 	`,
 	link: "youtuber-twitch-partner-program",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121588-youtuber-twitch-partner-program",
 };
 
 export default article;

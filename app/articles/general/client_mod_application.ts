@@ -65,6 +65,8 @@ const client_mod_application = {
 	Apply now by emailing the filled in format to <a href="mailto:clientmod@silentclient.net">clientmod@silentclient.net</a> with the subject: <b>"Silent Client Mod Team Application”</b> and you could be the next person to join the Client Moderation team!`,
 	link: "client-mod-application",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121611-client-mod-application",
 };
 
 export default client_mod_application;

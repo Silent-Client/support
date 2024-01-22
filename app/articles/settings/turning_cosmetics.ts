@@ -21,6 +21,8 @@ const turning_cosmetics = {
 	You can now shine with your cosmetics on the Silent Client! Thank you for supporting our work!
 	<br/>
 	<img src="/article_attachments/turning-cosmetics-on-off/game.png" />`,
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121620-turning-cosmetics-on-off",
 };
 
 export default turning_cosmetics;

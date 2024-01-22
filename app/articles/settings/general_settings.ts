@@ -35,6 +35,8 @@ const general_settings = {
 	<b>Menu Animations:</b> if enabled, there will be an animation when opening the menu.
 	<br/><br/>
 	<b>Menu Animations:</b> allows you to adjust the speed of the animation. <i>(This requires Menu Animations to be enabled.)</i>`,
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121616-silent-client-settings-general",
 };
 
 export default general_settings;

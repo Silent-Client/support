@@ -35,6 +35,8 @@ const updating_windows = {
 	</ol>`,
 	link: "updating-windows-and-graphics-driver",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121612-updating-windows-and-graphics-driver",
 };
 
 export default updating_windows;

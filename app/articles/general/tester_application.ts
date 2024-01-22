@@ -34,6 +34,8 @@ const article = {
 	Do not contact any staff members regarding your application, as it will result in an instant denial. `,
 	link: "tester-application",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121628-tester-application",
 };
 
 export default article;

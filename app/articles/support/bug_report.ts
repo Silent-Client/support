@@ -11,6 +11,8 @@ const article = {
 	Once you have submitted a bug report, our Tech Support team should review and respond to it within a few hours.`,
 	link: "submit-a-bug-report",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121610-submitting-a-bug-report",
 };
 
 export default article;

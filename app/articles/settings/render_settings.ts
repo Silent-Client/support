@@ -21,6 +21,8 @@ const render_settings = {
 	<br/><br/>
 	<b>Model Bobbing Only:</b> disables world bobbing if view bobbing is enabled.
 	<br/><br/>`,
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121617-silent-client-settings-render",
 };
 
 export default render_settings;

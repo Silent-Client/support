@@ -16,6 +16,8 @@ const article = {
 	The email will contain the generated password, use it to log into your account.`,
 	link: "reseting-your-password",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121606-reseting-your-password",
 };
 
 export default article;

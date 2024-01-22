@@ -36,6 +36,8 @@ const fps_boost_settings = {
 	<img src="/article_attachments/silent-client-settings-fps-boost/other.png" >
 	</li>
 	</ul>`,
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121618-silent-client-settings-fps-boost",
 };
 
 export default fps_boost_settings;

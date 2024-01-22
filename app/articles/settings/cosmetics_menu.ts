@@ -26,6 +26,8 @@ const cosmetics_menu = {
 	<br/><br/>
 	<h3>Purchasing cosmetics</h3>
 	You can either visit the <a href="https://store.silentclient.net">Silent Client Store</a> through the cosmetics menu to preview and purchase cosmetics.`,
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121619-cosmetics-menu",
 };
 
 export default cosmetics_menu;

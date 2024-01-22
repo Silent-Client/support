@@ -121,6 +121,8 @@ const multiplayer_issues = {
 	<li>Once you have done that, launch the game.</li>
 	</ol>`,
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121613-multiplayer-connection-issues",
 };
 
 export default multiplayer_issues;

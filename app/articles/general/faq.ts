@@ -26,6 +26,8 @@ const article = {
 	- VK (<a href="https://vk.com/silentclient">click here</a>)`,
 	link: "silent-client-faq",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121629-silent-client-faq",
 };
 
 export default article;

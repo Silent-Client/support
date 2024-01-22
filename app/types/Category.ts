@@ -6,4 +6,5 @@ export default interface Category {
 	description: string;
 	link: string;
 	articles: Article[];
+	redirect: string;
 }

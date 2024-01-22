@@ -15,6 +15,8 @@ const article = {
 	</ul>`,
 	link: "adding-more-memory-ram-to-your-silent-client",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121607-adding-more-memory-ram-to-your-silent-client",
 };
 
 export default article;

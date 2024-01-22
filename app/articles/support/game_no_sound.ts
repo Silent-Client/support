@@ -15,6 +15,8 @@ const article = {
 	If the same issue persists, please <a href="/article/submit-a-bug-report">submit a bug report</a> through the launcher immediately after having this issue.`,
 	link: "game-has-no-sound",
 	author: "kirillsaint",
+	redirect:
+		"https://silentclient.freshdesk.com/support/solutions/articles/154000121608-game-has-no-sound",
 };
 
 export default article;
