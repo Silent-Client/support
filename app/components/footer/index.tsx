@@ -37,9 +37,7 @@ function Footer() {
 				justifyContent="space-between"
 			>
 				<Center w="full" justifyContent={["center", "left"]} h="42px">
-					<Text fontWeight={600}>
-						© {new Date().getFullYear()} Silent Client
-					</Text>
+					<Text fontWeight={600}>© AitherCol {new Date().getFullYear()}</Text>
 				</Center>
 
 				<Center h="42px">
