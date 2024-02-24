@@ -1,4 +1,4 @@
-import { Center, Link, Stack, Text } from "@chakra-ui/react";
+import { Center, Link, Stack } from "@chakra-ui/react";
 import NextLink from "next/link";
 import {
 	FaDiscord,
@@ -37,7 +37,14 @@ function Footer() {
 				justifyContent="space-between"
 			>
 				<Center w="full" justifyContent={["center", "left"]} h="42px">
-					<Text fontWeight={600}>© AitherCol {new Date().getFullYear()}</Text>
+					<Link
+						fontWeight={600}
+						_hover={{ textDecoration: "none", opacity: "0.5" }}
+						href="https://aithercol.com"
+						isExternal
+					>
+						© {new Date().getFullYear()} AitherCol
+					</Link>
 				</Center>
 
 				<Center h="42px">
