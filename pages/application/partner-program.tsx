@@ -26,7 +26,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 interface Application {
 	id: number;
 	user_id: number;
-	type: "twitch" | "youtube";
+	type: "twitch" | "youtube" | "tiktok";
 	channel: string;
 	most_recent_video: string;
 	status: "ok" | "waiting" | "rejected";
@@ -35,7 +35,7 @@ interface Application {
 }
 
 interface ApplicationForm {
-	type: "twitch" | "youtube";
+	type: "twitch" | "youtube" | "tiktok";
 	channel: string;
 	most_recent_video: string;
 	contacts: {
@@ -178,6 +178,7 @@ function PartnerApplication() {
 									>
 										<option value={"youtube"}>YouTube</option>
 										<option value={"twitch"}>Twitch</option>
+										<option value={"tiktok"}>TikTok</option>
 									</Select>
 									{errors.type && (
 										<FormErrorMessage>Platform is required.</FormErrorMessage>
