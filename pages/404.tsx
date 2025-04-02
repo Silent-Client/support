@@ -4,7 +4,8 @@ import { useEffect } from "react";
 
 function NotFound() {
 	useEffect(() => {
-		window.location.href = "https://silentclient.freshdesk.com/";
+		window.location.href =
+			"https://dsc.gg/silentclient";
 	}, []);
 	return (
 		<Center h="full" w="full">

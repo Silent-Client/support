@@ -4,7 +4,7 @@ import { useEffect } from "react";
 function New() {
 	useEffect(() => {
 		window.location.href =
-			"https://silentclient.freshdesk.com/support/tickets/new";
+			"https://dsc.gg/silentclient";
 	}, []);
 
 	return (
